@@ -1,0 +1,360 @@
+body {    margin: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;}
+.navbar {
+    background-color:  rgb(0, 124, 240);    
+    display: flex;
+    align-items: center;    justify-content: space-between;
+    padding: 10px;    position: relative;
+   
+    flex-wrap: wrap; /* يسمح للعنصر بالتفاف عند الحاجة */}
+.navbar .logo img {
+    width: 80px;    height: 80px;
+
+}
+.menu-btn { 
+    display: none; /* إخفاء الزر في الشاشات الكبيرة */ 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    position: relative; 
+    z-index: 1001; 
+}
+
+.menu-icon { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 30px; 
+    height: 25px; 
+}
+
+
+
+.bar { 
+    display: block; 
+    width: 30px; 
+    height: 3px; 
+    background-color:   rgb(0, 0, 0); /* تغيير اللون إلى الأسود */ 
+    margin: 5px 0; 
+    transition: all 0.3s ease; 
+}
+.home{
+    position: absolute;
+    top:110%;
+    right:35%;
+    text-align: center;
+    font-size:20px;
+}
+.menu-btn.active .bar1 { 
+    transform: rotate(45deg); 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+}
+
+.menu-btn.active .bar2 {  
+    opacity: 0; 
+}
+
+.menu-btn.active .bar3 {  
+    transform: rotate(-45deg);  
+    position: absolute;  
+    top: 10px;  
+    left: 10px;  
+}
+
+
+
+.list {
+    list-style: none;
+    display: flex;    margin: 0;
+    padding: 0;}
+.navbar .nav-itm {
+    padding: 10px 15px;    margin-left: 10px; border-radius:30px; transition:1s;
+    
+}
+.navbar .list a {    text-decoration: none;
+    color: rgb(255, 255, 255);    font-size: 25px;
+}
+.navbar .nav-itm:hover {    background-color: rgb(21, 3, 184);
+}
+.sho{
+    width:100%;
+    background-color:   rgb(0, 124, 240);
+    text-align: center;
+}
+.card-67 img{
+    width: 100%;
+    height:100vh;
+    background-position:center;
+    background-size: cover;
+    
+}
+.card-67 h1{
+    position:absolute;
+    bottom:60%;
+    left:33%;
+    
+}
+.ifr{
+    border-radius:8px;
+    box-shadow:1px 2px 8px black;
+    margin-left:150px;
+}
+
+.new{
+    background-color: rgb(218, 167, 1);
+
+
+}
+
+
+.pulse-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulse-container img {
+    width: 300px; /* يمكنك ضبط الحجم كما تشاء */
+    height: auto;
+    animation: pulse 3.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* تعديل قيمة الحجم لجعل التأثير واضح */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+.new .text{
+    text-align: center;
+    color: white;
+}
+.card{
+    
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 10px 9px rgb(75, 75, 75);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin:10px;
+    text-align: center;
+    
+    
+}
+.card:hover{
+    transform:translateY(-15px);
+    width:320px;
+}
+.barek1{
+    width: 100%;
+    background-color: rgb(0, 124, 240);
+    text-align: center;
+}
+.new-1{
+    display: flex;
+}
+.card img{
+    width: 50%;
+}
+.card-2{
+
+    background-color: rgb(0, 124, 240);
+    width: 300px;
+    height: 300px;
+    margin-left: 20rem;
+    margin-top: -18rem;
+    box-shadow: 1px 10px 9px rgb(75, 75, 75);
+    border-radius: 10px;
+
+    
+
+}
+
+.card-2 img{
+    width: 50%;
+}
+.card-3{
+
+    background-color: rgb(58, 239, 252);
+    width: 300px;
+    height: 300px;
+    margin-left: 40rem;
+    margin-top: -18.7rem;
+    box-shadow: 1px 10px 9px rgb(75, 75,75);
+    border-radius: 10px;
+    
+    
+    
+
+}
+
+.card-3 img{
+    width: 50%;
+}
+
+.card-4{
+
+    background-color: rgb(58, 239, 252);
+    width: 300px;
+    height: 300px;
+    margin-left: 60rem;
+    margin-top: -19.5rem;
+    box-shadow: 1px 10px 9px rgb(75, 75,75);
+    border-radius: 10px;
+    
+    
+
+}
+
+.card-4 img{
+    width: 50%;
+}
+.barek{
+    width:100%;
+    background-color:rgb(0, 124, 240);
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin:50px;
+    background-color: #003cff;
+    padding:20px;
+    border-radius:10px;
+}
+.card-a{
+background-color: rgb(194, 192, 192);
+padding:20px 50px;
+text-align: center;
+border-radius:30px;
+transition:1s;
+}
+.abaut{
+    text-align: center;
+}
+.abaut h1{
+    background-color: rgb(0, 124, 240);
+    
+}
+.card-a h3{
+    font-size:50px;
+}
+.card-a h2{
+    
+    font-size:30px;
+}
+.card-a:hover{
+    background-color: rgb(255, 255, 255);
+}
+footer{
+    background-color: rgb(0, 124, 240); ; color: rgb(230, 242, 252);
+    text-align: center;
+    padding:5px;
+}
+footer img{
+    width:50px;
+    transition:0.7s;
+}
+footer img:hover{
+    width:60px;
+}
+
+
+.section h1{
+    font-size:35px;
+    width:100%;
+    text-align: center;
+    background-color: rgb(0, 124, 240);
+}
+.section .sec{
+    text-align: center;
+     
+}
+.sec{
+    box-shadow:2px 6px 2px  6px  #003cff;
+    width:30%;
+    margin-left:35%; 
+    padding:2px;
+    margin-top:35px;
+    transition: 0.6s;
+}
+.sec:hover{
+    box-shadow:2px 6px 2px  6px rgb(92, 92, 92);
+    margin-top:20px;
+
+}
+
+
+
+@media screen and (max-width:480px) {
+     .cards{
+        display:table;
+        
+     }
+     .ifr{
+        margin-left:35px;
+     }
+     .card-a{
+        margin-top:20px;
+     }
+     .new-1{
+        display: table;
+     }
+     .card{
+        margin:50px 40px;
+     }
+     .navbar {        justify-content: flex-start;
+     }
+     .navbar .logo {        margin-right: auto;
+     }
+     .navbar {
+        background-color:  rgb(0, 124, 240);    }
+    .navbar .list a {
+        color: #000;
+    }
+    .navbar .nav-itm:hover {        background-color: #003cff ;
+    }
+    .menu-btn{
+        position: relative;
+        right:20px;
+        
+    }
+    .sec{
+        width:55%;
+        margin-left:22%;
+    }
+    }
+@media screen and (max-width:890px){
+    .menu-btn {        display: block;
+    }
+    .list {        display: none;
+        flex-direction: column;        width: 100%;
+        text-align: center;        background-color: rgb(240, 240, 245);
+        position: absolute;        top: 100%;
+        right: 0;        z-index: 1000;
+    }
+    .list.active {        display: flex;
+    }
+}
+@media screen and (max-width:375px){
+ .navbar{
+    width: 95%;
+ }
+}
+
+
